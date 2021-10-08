@@ -11,4 +11,4 @@ entry_points:
 {% endfor %}
 
     command: >-
-        python {{cookiecutter.script_name}} {% for n in cookiecutter.parameters.split(",") %} --{{n}} {{"{"}}{{n}}{{"}"}} {% endfor %}
+        python3 {{cookiecutter.script_name}} {% for n in cookiecutter.parameters.split(",") %} --{{n}} {{"{"}}{{n}}{{"}"}} {% endfor %}

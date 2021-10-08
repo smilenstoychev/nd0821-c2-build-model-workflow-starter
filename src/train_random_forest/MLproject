@@ -4,7 +4,6 @@ conda_env: conda.yml
 entry_points:
   main:
     parameters:
-
       trainval_artifact:
         description: Train dataset
         type: string
@@ -25,7 +24,7 @@ entry_points:
 
       rf_config:
         description: Random forest configuration. A path to a JSON file with the configuration that will
-                     be passed to the scikit-learn constructor for RandomForestRegressor.
+          be passed to the scikit-learn constructor for RandomForestRegressor.
         type: string
 
       max_tfidf_features:
@@ -37,7 +36,7 @@ entry_points:
         type: string
 
     command: >-
-      python run.py --trainval_artifact {trainval_artifact} \
+      python3 run.py --trainval_artifact {trainval_artifact} \
                     --val_size {val_size} \
                     --random_seed {random_seed} \
                     --stratify_by {stratify_by} \
