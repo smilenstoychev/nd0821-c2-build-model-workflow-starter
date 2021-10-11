@@ -66,42 +66,42 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input_artifact", 
         type=str,
-        help="Self-explanatory parameter",
+        help="The name of the input artifact to be used",
         required=True
     )
 
     parser.add_argument(
         "--output_artifact", 
         type=str,
-        help="Self-explanatory parameter",
+        help="The name to be used for the output artifact",
         required=True
     )
 
     parser.add_argument(
         "--output_type", 
         type=str,
-        help="Self-explanatory parameter",
+        help="The type of output file",
         required=True
     )
 
     parser.add_argument(
         "--output_description", 
         type=str,
-        help="Self-explanatory parameter",
+        help="The description to be attached to output artifact",
         required=True
     )
 
     parser.add_argument(
         "--min_price", 
         type=float,
-        help="Self-explanatory parameter",
+        help="The min valid price",
         required=True
     )
 
     parser.add_argument(
         "--max_price", 
         type=float,
-        help="Self-explanatory parameter",
+        help="The max valid price",
         required=True
     )
 

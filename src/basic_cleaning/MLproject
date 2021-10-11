@@ -6,28 +6,28 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: ## ADD DESCRIPTION
+        description: The name of the input artifact to be used
         type: string
 
       output_artifact:
-        description: ## ADD DESCRIPTION
+        description: The name to be used for the output artifact
         type: string
 
       output_type:
-        description: ## ADD DESCRIPTION
+        description: The type of output file
         type: string
 
       output_description:
-        description: ## ADD DESCRIPTION
+        description: The description to be attached to output artifact
         type: string
 
       min_price:
-        description: ## ADD DESCRIPTION
-        type: string
+        description: The min valid price
+        type: float
 
       max_price:
-        description: ## ADD DESCRIPTION
-        type: string
+        description: The max valid price
+        type: float
 
 
     command: >-
